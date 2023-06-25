@@ -1,0 +1,775 @@
+.btn.Buttons {
+  border: 1px solid #333333;
+  color: #333333;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.btn.Buttons:hover {
+  border: 1px solid #ffc702;
+  color: #ffc702;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #333333;
+  cursor: pointer;
+  border: 1px solid #ffc702;
+}
+.btn.Buttons:active {
+  scale: 0.99;
+}
+
+.btn.Main {
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.btn.Main:hover {
+  border: 1px solid #333333;
+  color: #333333;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #333333;
+  cursor: pointer;
+  border: 1px solid #333333;
+}
+.btn.Main:active {
+  scale: 0.99;
+}
+
+.btn.Dark {
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.btn.Dark:hover {
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #333333;
+  cursor: pointer;
+  border: 1px solid #fafafa;
+}
+.btn.Dark:active {
+  scale: 0.99;
+}
+
+.btn.Inverse {
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.btn.Inverse:hover {
+  border: 1px solid #333333;
+  color: #333333;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #333333;
+  cursor: pointer;
+  border: 1px solid #333333;
+}
+.btn.Inverse:active {
+  scale: 0.99;
+}
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+.wrapper header {
+  margin-top: 25px;
+}
+.wrapper header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper header nav a {
+  color: #8b8b8b;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 21.5px;
+  transition: 0.4s;
+  border-bottom: 3px solid transparent;
+}
+.wrapper header nav a:hover {
+  color: #333333;
+  border-bottom: 3px solid #00ca69;
+}
+.wrapper .main .main-card {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  background-color: #00ca69;
+  flex-direction: column;
+  padding: 25px 25px 50px 25px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.wrapper .main .main-card .circle {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 35px;
+  border-radius: 100%;
+  justify-content: center;
+}
+.wrapper .main .main-card .circle h4 {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.wrapper .main .main-card h1 {
+  width: 80%;
+  text-align: center;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 30px;
+}
+.wrapper .main .long-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.wrapper .main .long-cards .long-card {
+  display: flex;
+  align-items: center;
+  width: 1110px;
+  border: 1px solid #d4d4d4;
+  color: #8b8b8b;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.wrapper .main .long-cards .long-card h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.wrapper .main .long-cards .long-card:hover {
+  background-color: #a93dff;
+  cursor: pointer;
+  color: #fafafa;
+}
+.wrapper .main .text-process {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.wrapper .main .process {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.wrapper .main .process .process_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 29%;
+  padding: 18px 0px;
+  gap: 10px;
+  background-color: #333333;
+  border-radius: 10px;
+  color: #fafafa;
+}
+.wrapper .main .process .process_card h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.wrapper .main .process .process_card:last-child {
+  padding-bottom: 30px;
+}
+.wrapper .main .process .process_card .circle {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 100%;
+  justify-content: center;
+}
+.wrapper .main .process .process_card .circle h4 {
+  position: absolute;
+  color: #333333;
+  font-weight: 700;
+  font-size: 16px;
+}
+.wrapper .main .process .process_card p {
+  color: #d4d4d4;
+  text-align: center;
+  width: 90%;
+}
+
+.about {
+  margin-top: 70px;
+}
+.about .container {
+  background-color: #00ca69;
+}
+.about .container h1 {
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 30px;
+}
+.about .wrapper p {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+.about .wrapper .cards_container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.about .wrapper .cards_container .four_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 184px;
+  gap: 10px;
+  padding: 20px 0;
+  border: 3px solid #d4d4d4;
+  width: 24%;
+  flex-shrink: 0;
+}
+.about .wrapper .cards_container .four_cards h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.about .wrapper .cards_container .four_cards p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.about .wrapper .story_h2 {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+.about .wrapper .story_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about .wrapper .story_container .story_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00ca69;
+  gap: 50px;
+}
+.about .wrapper .story_container .story_cards .years {
+  background-color: #00ca69;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+.about .wrapper .story_container .story_cards:last-child {
+  color: #333333;
+}
+.about .wrapper .story_container .story_cards:last-child .years {
+  background-color: #333333;
+}
+.about .wrapper .story_container .story_cards .story_card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.about .wrapper .story_container .story_cards .story_card h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.about .wrapper .story_container .story_cards .story_card h2:first-child {
+  color: #fafafa;
+}
+.about .wrapper .story_container .story_cards .story_card p {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.prices {
+  margin-top: 80px;
+}
+.prices .container {
+  background-color: #a93dff;
+}
+.prices .container h1 {
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+  transition: 0.4s;
+  font-weight: 700;
+  font-size: 30px;
+}
+.prices .wrapper {
+  margin-top: 50px;
+}
+.prices .wrapper .prices_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.prices .wrapper .prices_container .prices_h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.prices .wrapper .prices_container .prices_h3 h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.prices .wrapper .prices_container .prices_h3 h3:nth-child(1),
+.prices .wrapper .prices_container .prices_h3 h3:nth-child(2) {
+  border-bottom: 1px solid #d4d4d4;
+  padding: 0px 0px 10px 0;
+}
+.prices .wrapper .prices_container .prices_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  gap: 20px;
+}
+.prices .wrapper .prices_container .prices_cards p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.prices .wrapper .prices_container .prices_cards .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #00ca69;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 10px;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 700;
+}
+.prices .wrapper .prices_container .prices_cards .box h3 {
+  color: #fafafa;
+}
+.prices .wrapper .prices_container .prices_cards .p-line {
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 0px 0px 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.prices .wrapper .prices_container .prices_cards .btn {
+  background-color: #ffc702;
+  border: none;
+}
+.prices .wrapper .prices_container p,
+.prices .wrapper .prices_container h3 {
+  color: #333333;
+}
+.prices .wrapper .cyf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #00ca69;
+  justify-content: center;
+  padding: 30px;
+  gap: 40px;
+  color: #fafafa;
+}
+.prices .wrapper .cyf .inputs_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 111px;
+  width: 100%;
+}
+.prices .wrapper .cyf .inputs_container .Input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.prices .wrapper .cyf .inputs_container .Input p {
+  text-align: center;
+  font-size: 18px;
+}
+.prices .wrapper .cyf .inputs_container .Input input {
+  border: none;
+  background-color: #00ca69;
+  border-bottom: 1px solid #fafafa;
+  width: 100%;
+  text-align: center;
+  background: none;
+  outline: none;
+  padding: 7px 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fafafa;
+}
+.prices .wrapper .cyf .btn {
+  width: 29%;
+}
+.prices .wrapper .info-title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contacts {
+  margin-top: 70px;
+}
+.contacts .container {
+  background-color: #333333;
+}
+.contacts .container h1 {
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 30px;
+}
+.contacts .wrapper #BeatCup {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacts .wrapper form {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+.contacts .wrapper form .active {
+  display: none;
+}
+.contacts .wrapper form .frame-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+  padding: 20px 0;
+  gap: 20px;
+  justify-content: center;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+.contacts .wrapper form .frame-13 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacts .wrapper form .frame-13 .TabPicker {
+  display: flex;
+  align-items: center;
+  width: 94%;
+}
+.contacts .wrapper form .frame-13 .TabPicker .email {
+  border: none;
+  border-bottom: 1px solid #ff5c16;
+  background-color: transparent;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff5c16;
+}
+.contacts .wrapper form .frame-13 .TabPicker .tg {
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: transparent;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #d4d4d4;
+}
+.contacts .wrapper form .frame-13 .frame-11 {
+  display: flex;
+  width: 94%;
+}
+.contacts .wrapper form .frame-13 .frame-11 .frame-9 {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 10px 0px 0px 10px;
+  justify-content: center;
+  width: 10%;
+}
+.contacts .wrapper form .frame-13 .frame-11 .frame-10 {
+  width: 90%;
+}
+.contacts .wrapper form .frame-13 .frame-11 .frame-10 input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.contacts .wrapper form .frame-13 .Chat {
+  width: 95%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 96px 70px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+}
+.contacts .wrapper form .frame-13 .btn {
+  width: 95%;
+  background-color: #ffc702;
+}
+.contacts .wrapper form .frame-17 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+  padding: 20px 0;
+  gap: 20px;
+  justify-content: center;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+.contacts .wrapper form .frame-17 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacts .wrapper form .frame-17 .TabPicker {
+  display: flex;
+  align-items: center;
+  width: 94%;
+}
+.contacts .wrapper form .frame-17 .TabPicker .email {
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: transparent;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #d4d4d4;
+}
+.contacts .wrapper form .frame-17 .TabPicker .tg {
+  border: none;
+  border-bottom: 1px solid #ff5c16;
+  background-color: transparent;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff5c16;
+}
+.contacts .wrapper form .frame-17 .frame-11 {
+  display: flex;
+  width: 94%;
+}
+.contacts .wrapper form .frame-17 .frame-11 .frame-9 {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 10px 0px 0px 10px;
+  justify-content: center;
+  width: 10%;
+}
+.contacts .wrapper form .frame-17 .frame-11 .frame-10 {
+  width: 90%;
+}
+.contacts .wrapper form .frame-17 .frame-11 .frame-10 input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  font-weight: 500;
+  outline: none;
+  font-size: 20px;
+}
+.contacts .wrapper form .frame-17 .Chat {
+  width: 95%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 96px 70px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+}
+.contacts .wrapper form .frame-17 .btn {
+  width: 95%;
+  background-color: #ffc702;
+}
+
+.products .wrapper .Title {
+  margin-top: 100px;
+}
+.products .wrapper .Title h1 {
+  color: #333333;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.products .wrapper .products_container {
+  color: #fafafa;
+  display: flex;
+  margin-top: 50px;
+}
+.products .wrapper .products_container .Main {
+  background-color: #00ca69;
+}
+.products .wrapper .products_container .Dark {
+  background-color: #333333;
+}
+.products .wrapper .products_container .Inverse {
+  background-color: #a93dff;
+}
+.products .wrapper .products_container .Product-List {
+  width: 33%;
+}
+.products .wrapper .products_container .Product-List .Product {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  transition: 0.4s;
+}
+.products .wrapper .products_container .Product-List .Product h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.products .wrapper .products_container .Product-List .Product h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.products .wrapper .products_container .Product-List .Product .btn {
+  width: 90%;
+  background-color: transparent;
+}
+.products .wrapper .products_container .Product-List .Product .btn:hover {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+footer {
+  margin-top: 80px;
+  background-color: #ffc702;
+}
+footer .wrapper .frame-15 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+footer .wrapper .frame-15 nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .wrapper .frame-15 nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 20px;
+}
+footer .wrapper .frame-15 .circle {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  padding: 35px;
+  border-radius: 100%;
+  justify-content: center;
+}
+footer .wrapper .frame-15 .circle h4 {
+  position: absolute;
+  color: #fafafa;
+  font-size: 13px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

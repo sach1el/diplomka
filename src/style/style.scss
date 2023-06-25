@@ -1,0 +1,722 @@
+$Dark: #333333;
+$Modal-Back: rgba(51, 51, 51, 0.75);
+$Stroke-Dark: #8b8b8b;
+$Stroke-Light: #d4d4d4;
+$Light: #fafafa;
+$Buttons: #ffc702;
+$Main: #00ca69;
+$Active: #ff5c16;
+$Inverse: #a93dff;
+
+@mixin button($color) {
+  border: 1px solid $color;
+  color: $color;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px;
+  background-color: transparent;
+  transition: 0.2s;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+@mixin activeButton($color) {
+  @include button($color);
+  color: $Dark;
+  cursor: pointer;
+  border: 1px solid $color;
+}
+
+.btn {
+  &.Buttons {
+    @include button($Dark);
+    &:hover {
+      @include activeButton($Buttons);
+    }
+    &:active {
+      scale: 0.99;
+    }
+  }
+}
+.btn {
+  &.Main {
+    @include button($Light);
+    &:hover {
+      @include activeButton($Dark);
+    }
+    &:active {
+      scale: 0.99;
+    }
+  }
+}
+.btn {
+  &.Dark {
+    @include button($Light);
+    &:hover {
+      @include activeButton($Light);
+    }
+    &:active {
+      scale: 0.99;
+    }
+  }
+}
+.btn {
+  &.Inverse {
+    @include button($Light);
+    &:hover {
+      @include activeButton($Dark);
+    }
+    &:active {
+      scale: 0.99;
+    }
+  }
+}
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  header {
+    margin-top: 25px;
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: $Stroke-Dark;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 15px 21.5px;
+        transition: 0.4s;
+        border-bottom: 3px solid transparent;
+        &:hover {
+          color: $Dark;
+          border-bottom: 3px solid $Main;
+        }
+      }
+    }
+  }
+  .main {
+    .main-card {
+      display: flex;
+      align-items: center;
+      margin-top: 45px;
+      background-color: $Main;
+      flex-direction: column;
+      padding: 25px 25px 50px 25px;
+      gap: 20px;
+      border-radius: 10px;
+      .circle {
+        display: flex;
+        align-items: center;
+        background-color: $Light;
+        padding: 35px;
+        border-radius: 100%;
+        justify-content: center;
+        h4 {
+          position: absolute;
+          font-size: 13px;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+      h1 {
+        width: 80%;
+        text-align: center;
+        color: $Light;
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
+    .long-cards {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      .long-card {
+        display: flex;
+        align-items: center;
+        width: 1110px;
+        border: 1px solid $Stroke-Light;
+        color: $Stroke-Dark;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        border-radius: 10px;
+        transition: 0.4s;
+        h3 {
+          font-weight: 700;
+          font-size: 20px;
+        }
+        &:hover {
+          background-color: $Inverse;
+          cursor: pointer;
+          color: $Light;
+        }
+      }
+    }
+    .text-process {
+      margin-top: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      color: $Dark;
+      text-transform: uppercase;
+    }
+    .process {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: space-between;
+      .process_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 29%;
+        padding: 18px 0px;
+        gap: 10px;
+        background-color: $Dark;
+        border-radius: 10px;
+        color: $Light;
+        h4 {
+          font-weight: 700;
+          font-size: 16px;
+        }
+        &:last-child {
+          padding-bottom: 30px;
+        }
+        .circle {
+          display: flex;
+          align-items: center;
+          background-color: $Light;
+          padding: 20px;
+          border-radius: 100%;
+          justify-content: center;
+          h4 {
+            position: absolute;
+            color: $Dark;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+        p {
+          color: $Stroke-Light;
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+.about {
+  margin-top: 70px;
+  .container {
+    background-color: $Main;
+    h1 {
+      padding: 20px;
+      text-align: center;
+      color: $Light;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+  .wrapper {
+    p {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .cards_container {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      justify-content: space-between;
+      .four_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 184px;
+        gap: 10px;
+        padding: 20px 0;
+        border: 3px solid $Stroke-Light;
+        width: 24%;
+        flex-shrink: 0;
+        h1 {
+          font-weight: 700;
+          font-size: 30px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+    .story_h2 {
+      margin-top: 50px;
+      font-weight: 700;
+      font-size: 25px;
+      text-align: center;
+    }
+    .story_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      .story_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $Main;
+        gap: 50px;
+        .years {
+          background-color: $Main;
+          padding: 5px 30px;
+          border-radius: 10px;
+        }
+        &:last-child {
+          color: $Dark;
+          .years {
+            background-color: $Dark;
+          }
+        }
+        .story_card {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+          h2 {
+            font-weight: 700;
+            font-size: 25px;
+            &:first-child {
+              color: $Light;
+            }
+          }
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.prices {
+  margin-top: 80px;
+  .container {
+    background-color: $Inverse;
+    h1 {
+      padding: 20px;
+      text-align: center;
+      color: $Light;
+      transition: 0.4s;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+  .wrapper {
+    margin-top: 50px;
+    .prices_container {
+      display: flex;
+  align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .prices_h3 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        h3:nth-child(1),
+        h3:nth-child(2) {
+          border-bottom: 1px solid $Stroke-Light;
+          padding: 0px 0px 10px 0;
+        }
+      }
+      .prices_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        gap: 20px;
+        p {
+          font-weight: 500;
+          font-size: 20px;
+        }
+        .box {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          background-color: $Main;
+          padding: 10px;
+          border-radius: 10px 10px 0px 0px;
+          margin-bottom: 10px;
+          color: $Light;
+          font-size: 20px;
+          font-weight: 700;
+          h3 {
+            color: $Light;
+          }
+        }
+        .p-line {
+          width: 100%;
+          border-bottom: 1px solid $Stroke-Light;
+          padding: 0px 0px 10px 0;
+          display: flex;
+          justify-content: center;
+        }
+        .btn {
+          background-color: $Buttons;
+          border: none;
+        }
+      }
+      p,
+      h3 {
+        color: $Dark;
+      }
+    }
+    .cyf {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      background-color: $Main;
+      justify-content: center;
+      padding: 30px;
+      gap: 40px;
+      color: $Light;
+      .inputs_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 111px;
+        width: 100%;
+        .Input {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+          width: 100%;
+          p {
+            text-align: center;
+            font-size: 18px;
+          }
+          input {
+            border: none;
+            background-color: $Main;
+            border-bottom: 1px solid $Light;
+            width: 100%;
+            text-align: center;
+            background: none;
+            outline: none;
+            padding: 7px 0;
+            font-weight: 500;
+            font-size: 20px;
+            color: $Light;
+          }
+        }
+      }
+      .btn {
+        width: 29%;
+      }
+    }
+    .info-title {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+.contacts {
+  margin-top: 70px;
+  .container {
+    background-color: $Dark;
+    h1 {
+      padding: 20px;
+      text-align: center;
+      color: $Light;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+  .wrapper {
+    #BeatCup {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      justify-content: center;
+      .active {
+        display: none;
+      }
+      .frame-13 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+        padding: 20px 0;
+        gap: 20px;
+        justify-content: center;
+        border: 1px solid $Dark;
+        border-radius: 20px;
+        p {
+          color: $Dark;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .TabPicker {
+          display: flex;
+  align-items: center;
+          width: 94%;
+          .email {
+            border: none;
+            border-bottom: 1px solid $Active;
+            background-color: transparent;
+            width: 50%;
+            font-weight: 500;
+            font-size: 20px;
+            color: $Active;
+          }
+          .tg {
+            border: none;
+            border-bottom: 1px solid $Stroke-Light;
+            background-color: transparent;
+            width: 50%;
+            font-weight: 500;
+            font-size: 20px;
+            color: $Stroke-Light;
+          }
+        }
+        .frame-11 {
+          display: flex;
+          width: 94%;
+          .frame-9 {
+            display: flex;
+  align-items: center;
+            background-color: $Dark;
+            border-radius: 10px 0px 0px 10px;
+            justify-content: center;
+            width: 10%;
+          }
+          .frame-10 {
+            width: 90%;
+            input {
+              width: 95%;
+              padding: 10px;
+              border-radius: 0 10px 10px 0;
+              outline: none;
+              font-weight: 500;
+              font-size: 20px;
+            }
+          }
+        }
+        .Chat {
+          width: 95%;
+          border-radius: 10px;
+          box-sizing: border-box;
+          padding: 20px 96px 70px 20px;
+          font-weight: 500;
+          font-size: 20px;
+          color: $Stroke-Dark;
+        }
+        .btn {
+          width: 95%;
+          background-color: $Buttons;
+        }
+      }
+      .frame-17 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+        padding: 20px 0;
+        gap: 20px;
+        justify-content: center;
+        border: 1px solid $Dark;
+        border-radius: 20px;
+        p {
+          color: $Dark;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .TabPicker {
+          display: flex;
+  align-items: center;
+          width: 94%;
+          .email {
+            border: none;
+            border-bottom: 1px solid $Stroke-Light;
+            background-color: transparent;
+            width: 50%;
+            font-weight: 500;
+            font-size: 20px;
+            color: $Stroke-Light;
+          }
+          .tg {
+            border: none;
+            border-bottom: 1px solid $Active;
+            background-color: transparent;
+            width: 50%;
+            font-weight: 500;
+            font-size: 20px;
+            color: $Active;
+          }
+        }
+        .frame-11 {
+          display: flex;
+          width: 94%;
+          .frame-9 {
+            display: flex;
+  align-items: center;
+            background-color: $Dark;
+            border-radius: 10px 0px 0px 10px;
+            justify-content: center;
+            width: 10%;
+          }
+          .frame-10 {
+            width: 90%;
+            input {
+              width: 95%;
+              padding: 10px;
+              border-radius: 0 10px 10px 0;
+              border-left: none;
+              font-weight: 500;
+              outline: none;
+              font-size: 20px;
+            }
+          }
+        }
+        .Chat {
+          width: 95%;
+          border-radius: 10px;
+          box-sizing: border-box;
+          padding: 20px 96px 70px 20px;
+          font-weight: 500;
+          font-size: 20px;
+          color: $Stroke-Dark;
+        }
+        .btn {
+          width: 95%;
+          background-color: $Buttons;
+        }
+      }
+    }
+  }
+}
+.products {
+  .wrapper {
+    .Title {
+      margin-top: 100px;
+      h1 {
+        color: $Dark;
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
+    .products_container {
+      color: $Light;
+      display: flex;
+      margin-top: 50px;
+      .Main {
+        background-color: $Main;
+      }
+      .Dark {
+        background-color: $Dark;
+      }
+      .Inverse {
+        background-color: $Inverse;
+      }
+      .Product-List {
+        width: 33%;
+        .Product {
+          display: flex;
+          width: 300px;
+          height: 300px;
+          padding: 30px;
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-between;
+          align-items: center;
+          gap: 50px;
+          transition: 0.4s;
+          h3 {
+            font-size: 20px;
+            font-weight: 700;
+          }
+          h1 {
+            font-size: 30px;
+            font-weight: 700;
+          }
+          .btn {
+            width: 90%;
+            background-color: transparent;
+            &:hover {
+              color: $Light;
+              border-color: $Light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  margin-top: 80px;
+  background-color: $Buttons;
+  .wrapper {
+    .frame-15 {
+      display: flex;
+  align-items: center;
+      padding: 30px 0;
+      justify-content: space-between;
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+          text-decoration: none;
+          color: $Dark;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+      .circle {
+        display: flex;
+  align-items: center;
+        background-color: $Dark;
+        padding: 35px;
+        border-radius: 100%;
+        justify-content: center;
+        h4 {
+          position: absolute;
+          color: $Light;
+          font-size: 13px;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
